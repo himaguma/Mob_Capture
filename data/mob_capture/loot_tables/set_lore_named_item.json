@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{name:setting}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "中身 ",
+                  "color": "gray",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "text": "[",
+                      "color": "gray",
+                      "italic": false
+                    },
+                    {
+                      "nbt": "Item.tag.display.Name",
+                      "entity": "@s",
+                      "interpret": true
+                    },
+                    {
+                      "text": "]",
+                      "color": "gray",
+                      "italic": false
+                    }
+                  ]
+                }
+              ],
+              "entity": "this",
+              "replace": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "mob_capture:mob_egg"
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_capture:craft/mob_egg"
+  }
+}
